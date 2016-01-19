@@ -1,0 +1,178 @@
+/* Déclaration des variables*/
+@padding_left_img: 40px;
+@padding: 20px;
+@font_size_h3: 25px;
+@font_size_th: 14px;
+@font_size_td: 12px;
+.blog-main-synth {
+  padding: 0;
+  margin: 0;
+}
+.mediaQ() {
+  @media screen {
+    @media (min-width: 1400px) {
+      width: 600px;
+    }
+    @media (min-width: 1200px) and (max-width:1400px) {
+      width: 580px;
+    }
+    @media (min-width: 1000px) and (max-width:1200px) {
+      width: 580px;
+      .img-principal,
+      .intro-img {
+        width: 570px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 1000px) {
+      width: 520px;
+      th {
+        font-size: @font_size_td+3px;
+      }
+      td {
+        font-size: @font_size_th+1px;
+      }
+      .img-principal,
+      .intro-img {
+        width: 520px;
+      }
+      .contenu-img {
+        width: 200px;
+      }
+    }
+    @media (min-width: 600px) and (max-width: 800px) {
+      width: 570px;
+      th {
+        font-size: @font_size_td+2px;
+      }
+      td {
+        font-size: @font_size_th;
+      }
+      .img-principal,
+      .intro-img {
+        width: 300px;
+      }
+      .contenu-img {
+        width: 180px;
+      }
+    }
+    @media (min-width: 500px) and (max-width: 600px) {
+      width: 480px;
+      img {
+        width: 420px;
+      }
+      th {
+        font-size: @font_size_td;
+      }
+      td {
+        font-size: @font_size_th;
+      }
+      .contenu-img {
+        width: 180px;
+      }
+    }
+    @media (max-width: 500px) {
+      width: 350px;
+      img {
+        margin-left: 0;
+        width: 400px;
+      }
+      th {
+        font-size: @font_size_td;
+      }
+      td {
+        font-size: @font_size_th;
+      }
+      .img-principal,
+      .intro-img {
+        width: 280px;
+      }
+      .contenu-img {
+        width: 150px;
+      }
+    }
+  }
+}
+/* Position des élements de la synthèse*/
+.blog-post-synth {
+  text-align: center;
+  /* Gestion du bloc en fonction du type d'appareil*/
+  .mediaQ;
+  /* Apparence des titres*/
+  h3 {
+    font-size: @font_size_h3;
+  }
+  h2 {
+    font-size: @font_size_h3 + 5px;
+  }
+  .img-principal,
+  .intro-img {
+    padding: 15px 0;
+  }
+  /* Postion du texte et des images*/
+  p {
+    font-size: @font_size_h3 - 10px;
+  }
+  /*Apparence et position des tableaux */
+  table {
+    margin: 0 0 @padding+10px;
+    .mediaQ;
+    thead {
+      th {
+        padding: 0 10px;
+      }
+    }
+    tr,
+    td {
+      padding: @padding;
+    }
+    tfoot {
+      td {
+        padding: 0;
+      }
+    }
+  }
+  /* Apparence et position du texte d'introduction */
+  .intro-post {
+    padding-bottom: @padding;
+    p {
+      .mediaQ;
+    }
+  }
+}
+.contenu-post {
+  .mediaQ;
+}
+/* Apparence et position des titres des parties/synthèses */
+.blog-header {
+  .mediaQ;
+  margin-bottom: 10px;
+  .blog-title-synth {
+    margin-left: -@padding;
+  }
+  .blog-title-synth-Reg {
+    margin-left: -(@padding_left_img+90px);
+  }
+}
+.blog-title-synth,
+.blog-title-synth-Reg {
+  font-size: @font_size_h3+15px;
+  padding: @padding+30px 0 0;
+  text-align: center;
+}
+.blog-sous-title-synth {
+  font-size: @font_size_h3;
+}
+/*Position des vidéos */
+.post-video {
+  padding-top: @padding_left_img;
+  .sous-part-title,
+  p {
+    margin-left: @padding;
+  }
+  .sous-part-title {
+    margin-top: @padding+15px;
+  }
+  iframe {
+    padding: @padding;
+  }
+}

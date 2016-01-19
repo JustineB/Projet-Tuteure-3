@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Document sans nom</title>
+	<link href="stylesCartes.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(function($) {
+			$(".map").append('<div class="overlay">');
+			$('.map area').mouseover(function() {
+				var index = $(this).index();
+				var coefficient = -index * 333 - 333 ;
+				$('.map .overlay').css({
+					backgroundPosition: coefficient + "px 0px"
+				});
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="map">
+		<img src="carteInteractive.jpg" width="200" usemap="#Map" height: "200"/>
+		<map name="Map">
+		  <area shape="poly" coords="92,31,104,34,112,36,123,34,132,35,136,29,142,37,147,42,141,48,139,59,136,70,130,80,124,88,120,94,111,95,100,92,92,91,83,87,86,79,90,75,94,73,93,67,92,58,92,51,94,44" href="#"> <!-- Mayenne-->
+          
+          
+		  <area shape="poly" coords="148,43,153,44,160,40,166,38,170,49,176,53,181,56,184,56,190,61,197,65,193,71,194,78,190,85,187,92,180,99,176,105,170,106,169,110,161,108,148,105,142,103,136,99,128,95,125,91,132,74,137,69,136,64,140,59,141,50" href="#">
+          <!--Sarthe-->
+          
+          
+		  <area shape="poly" coords="82,89,91,91,102,93,114,95,122,92,126,95,132,97,138,104,145,103,155,108,159,111,158,119,155,127,152,133,150,140,145,145,142,150,134,148,126,148,119,148,113,155,105,155,97,156,87,150,80,144,83,139,80,134,76,128,85,124,92,124,97,122,95,118,94,112,88,112,85,111,90,107,88,102,86,98,82,95" href="#"><!--Maine et Loire-->
+		</map>
+
+	</div>
+</body>
+
+</html>

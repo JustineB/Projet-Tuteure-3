@@ -1,0 +1,392 @@
+/*
+ * Globals
+ */
+
+
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/Bitter.woff2") format("woff2");
+}
+
+
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+  margin: 0px auto;
+  max-width: 1600px;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Bitter";
+  font-weight: normal;
+  color: #333;
+}
+li {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color:rgba(255, 131, 28, 0.82);
+}
+
+.text-type li{
+  list-style-type:square;
+}
+
+.blog-sidebar{
+  margin-top:55px;
+}
+
+.nav-bar ul{
+  margin-top:-10px;
+  position:absolute;
+  left:-999em;
+  z-index:1000;
+}
+
+.nav-bar ul li{
+  display: inherit;
+  color: #DEB887;
+}
+
+.nav-bar ul a{
+  color: #333;
+}
+
+.active ul a{
+  color: #DEB887;
+}
+
+
+/*
+*Keyframe
+*/
+@keyframes left-move{
+  from{
+    margin-left:100px;
+  }
+  to{
+    margin-left:0px;
+  }
+}
+@-webkit-keyframes left-move{
+  from{
+    margin-left:100px;
+  }
+  to{
+    margin-left:0px;
+  }
+}
+@-mozkit-keyframes left-move{
+  from{
+    margin-left:100px;
+  }
+  to{
+    margin-left:0px;
+  }
+}
+
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background: url("../diamond.png") no-repeat scroll top;
+  background-size: 1600px auto;
+  height: 270px;
+  width: 100%;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+}
+
+/*
+ * couleur de la barre de navigation
+ */
+
+.home-link h1 {
+  font-family: "Bitter";
+}
+.home-link h2 {
+  font-style: italic;
+  font-size: 25px;
+}
+.home-link {
+  margin: 0px auto;
+  max-width: 1080px;
+  min-height: 220px;
+  padding-left: 40px;
+  display: block;
+  text-decoration: none;
+}
+.home-link h1 {
+  margin: 0px;
+  padding: 54px 0px 10px;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 58px;
+}
+.nav-bar {
+  background-color: #f7f5e7;
+  max-width: 1600px;
+  min-height: 50px;
+  margin: 0px auto;
+
+}
+.blog-nav {
+  clear: both;
+  float:left;
+  max-width: 800px;
+  min-height: 50px;
+}
+.blog-nav li {
+  min-height: 50px;
+  display: inline-block;
+}
+
+/* Nav links */
+
+.blog-nav-item {
+  min-height: 50px;
+  position: relative;
+  display: inline-block;
+  padding: 13px 30px 5px;
+  font-weight: 500;
+  color: #141412;
+}
+
+.home-link:hover, .home-link:focus {
+  text-decoration: none;
+}
+.title-link:hover, .title-link:focus {
+  text-decoration: underline;
+}
+.blog-nav-item:hover, .blog-nav-item:focus, .nav-bar li ul, .nav-bar li:hover, .nav-bar li:focus, .blog-nav-item:hover li, .blog-nav-item:focus li, .active:hover, .active:focus{
+  background-color: #D2691E;
+  color: #FFF;
+  text-decoration: none;
+}
+
+ .nav-bar li ul:hover, .nav-bar li ul:focus, .nav-bar li ul li:hover a,.nav-bar li ul li:focus a {
+  background-color: #660000;
+  color: #FFF;
+}
+
+
+.nav-bar li:hover a, .nav-bar li ul li:hover .active {
+  color: #FFF;
+}
+
+.nav-bar li:hover ul .active {
+  color: #DEB887;
+}
+
+
+
+.nav-bar li:hover ul, .nav-bar li ul:hover, .blog-nav li:hover ul{
+  left:auto;
+  right:auto;
+}
+
+.nav-bar li:hover ul  , .nav-bar li ul:hover, .blog-nav li:hover ul {
+  padding:0px;
+}
+
+.img-diapo:hover , #slides ul:hover{
+  background-color: inherit;
+}
+/* Active state gets a caret at the bottom */
+
+.blog-nav .active {
+  color: #DEB887;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.blog-post li{
+  line-height: 1.4;
+}
+
+.blog-post{
+  font-size:15.5px;
+  margin-left:5px;
+}
+
+/* Sidebar modules for boxing content */
+
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+  background-color:#f7f5e7;
+
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child, .sidebar-module-inset ul:last-child, .sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+
+#barre-recherche-nav{
+  top:5px;
+  left:5px;
+  width:10px;
+  height:30px;
+  padding-left:10px;
+  position: relative;
+  display: none;
+  border: solid #DEB887 1px;
+}
+
+.barre-recherche-loupe img{
+    float:left;
+    cursor:pointer;
+}
+
+.barre-recherche-loupe{
+  width: 100px;
+  height: 50px;
+  float: right;
+  position: relative;
+  right: 0px;
+  margin-top: 5px;
+}
+
+
+.loupe{
+  display:inline-block;
+  float:left;
+  margin-top:5px;
+}
+#barre-recherche{
+  border:none;
+  padding-left:12px;
+  padding-top:8px;
+  padding-bottom: 5px;
+
+}
+
+.barre-rech{
+  border: solid #DEB887 3px;
+}
+
+.sidebar-module h4{
+  font-weight: bold;
+}
+
+/* Pagination */
+
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 40px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+/*
+ * Form blog
+*/
+.form-group input {
+  width:400px;
+}
+
+.form-group textarea {
+  width:500px;
+  height:150px;
+}
+/*
+ * Footer
+ */
+
+.blog-footer {
+  margin-top:20px;
+  padding: 40px 40px;
+  color: #999;
+  text-align: center;
+  background-color: hsla(0, 0%, 75%, 0.77);
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}

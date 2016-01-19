@@ -1,0 +1,752 @@
+/* Media Query*/
+
+@media screen and (min-width: 1400px) {
+
+  /* style de la carte interactive*/
+  .mini-carte{
+    display:none;
+  }
+  .carte-basique{
+    display:block;
+  }
+
+  /* Position des fleches du carroussel */
+  #nextpost {
+    right: 80px;
+  }
+  #previouspost {
+    left: 110px;
+  }
+  #previous {
+    left: 40px;
+  }
+  #next{
+    right:-50px;
+  }
+  .fleche-main-diapo {
+    top: 140px;
+  }
+  .post-fleche-diapo {
+    top: 560px;
+  }
+
+  /*Image du diaporama*/
+  #slides, .img-diapo, .diapo-acceuil {
+    width: 650px;
+    height: 380px;
+  }
+
+  /* Petites images sous le diaporama */
+  #post-diapo li {
+    width: 90px;
+    height: 70px;
+  }
+  #post-diapo {
+    margin: 10px 130px;
+    width: 500px;
+  }
+
+  /*Elements de pagination*/
+  .slidesjs-pagination {
+    margin: 7px 320px 0px;
+  }
+
+  /* Article comprenant le diaporama dans son ensemble*/
+  .blog-diapo {
+    width: 700px;
+    height: 500px;
+  }
+  .blog-diapo-title {
+    font-size: 20px;
+    padding: 24px 165px 5px;
+  }
+
+  /* Elements principaux du blog */
+  .blog-title {
+    font-size: 50px;
+  }
+
+  /*Elements de navigation*/
+  .blog-nav {
+    margin-left: 200px;
+  }
+
+  #barre-recherche {
+    width: 273px;
+  }
+  .barre-rech {
+    width: 280px;
+    height: 40px;
+    margin-left: 40px;
+  }
+
+  /* Element concernant un post du blog */
+  .blog-post {
+    margin-left: 65px;
+  }
+  .blog-post-title{
+    font-size: 40px;
+  }
+
+  /* Video d'un post du blog*/
+  .post-video iframe {
+    width: 604px;
+    height: 340px;
+  }
+
+}
+@media screen and (min-width: 1200px) and (max-width:1400px) {
+  /* style de la carte interactive*/
+  .mini-carte{
+    display:none;
+  }
+  .carte-basique{
+    display:block;
+  }
+
+  /*Redifinition de la taille des conteneurs */
+  .container {
+    width: 1200px;
+  }
+
+  /* Position des fleches du carroussel */
+  #nextpost {
+    right: 110px;
+  }
+  #previouspost{
+    left:100px;
+  }
+  #next {
+    right: -55px;
+  }
+  #previous {
+    left: 30px;
+  }
+  .fleche-main-diapo {
+    top: 140px;
+  }
+  .post-fleche-diapo {
+    top: 510px;
+  }
+
+  /*Image du diaporama*/
+  #slides, .img-diapo, .diapo-acceuil {
+    width: 600px;
+    height: 340px;
+  }
+
+  /*Petites images sous le diaporama*/
+  #post-diapo li {
+    width: 80px;
+    height: 60px;
+  }
+  #post-diapo {
+    margin: 10px 130px;
+    width: 480px;
+  }
+
+  /*Elements de pagination*/
+  .slidesjs-pagination {
+    margin: 2px 290px 0px;
+  }
+
+  /* Article comprenant le diaporama dans son ensemble*/
+  .blog-diapo {
+    width: 650px;
+    height: 420px;
+  }
+  .blog-diapo-title {
+    font-size: 20px;
+    padding: 24px 165px 5px;
+  }
+
+  /* Elements principaux du blog */
+
+  .blog-title {
+    font-size: 45px;
+  }
+
+  /* Elements concernant la navigation*/
+  .blog-nav {
+    margin-left: 180px;
+  }
+  #barre-recherche {
+    width: 263px;
+  }
+  .barre-rech {
+    width: 270px;
+    height: 40px;
+    margin-left: 40px;
+  }
+
+  /* Element concernant un post du blog */
+  .blog-post {
+    margin-left: 20px;
+  }
+  .blog-post-title{
+    font-size: 35px;
+  }
+    /* Video d'un post du blog*/
+  .post-video iframe {
+    width: 620px;
+    height: 340px;
+  }
+
+}
+@media screen and (min-width: 1000px) and (max-width:1200px) {
+    /* style de la carte interactive*/
+  .mini-carte{
+    display:none;
+  }
+  .carte-basique{
+    display:block;
+  }
+
+  /*Redifinition de la taille des conteneurs */
+  .container {
+    width: 1000px;
+  }
+
+  /*Position des fleches du carroussel */
+  #nextpost {
+    right: 125px;
+  }
+  #previouspost {
+    left: 25px;
+  }
+  #previous {
+    left: 20px;
+  }
+  #next {
+    right: -20px;
+  }
+  .fleche-main-diapo {
+    top: 100px;
+  }
+  .post-fleche-diapo {
+    top: 460px;
+  }
+
+  /*Image du diaporama*/
+  #slides, .img-diapo, .diapo-acceuil {
+    width: 480px;
+    height: 300px;
+  }
+  #slides ul {
+    padding-left: 20px;
+  }
+
+  /*Petites images sous le diaporam*/
+  #post-diapo li {
+    width: 90px;
+    height: 60px;
+  }
+  #post-diapo {
+    margin: 10px 25px;
+    width: 460px;
+  }
+
+  /*Elements de pagination*/
+  .slidesjs-pagination {
+    margin: 0px 225px 0px;
+  }
+
+  /*Elements concernant le diaporama dans son ensemble */
+  .blog-diapo {
+    width: 500px;
+    height: 430px;
+  }
+  .blog-diapo-title {
+    font-size: 19px;
+    padding: 24px 20px 5px;
+  }
+
+  /*Element concernant le blog dans son ensemble*/
+  .blog-title {
+    font-size: 40px;
+  }
+
+  /*Element concernant le blog dans son ensemble*/
+  .blog-post {
+    margin-left: 0px;
+  }
+  .blog-post-title{
+    font-size: 30px;
+  }
+
+  /* Elements concernant une video dans un post */
+  .post-video iframe {
+    width: 510px;
+    height: 340px;
+  }
+
+  /* Elements de navigation */
+  .blog-nav {
+    margin-left: 0px;
+    max-width: 700px;
+  }
+  .blog-nav-item {
+    padding: 13px 20px 5px;
+  }
+  #barre-recherche {
+    width: 203px;
+  }
+  .barre-rech {
+    width: 210px;
+    height: 40px;
+    margin-left: 40px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+  .container {
+    width: 800px;
+  }
+  #nextpost {
+    right: 30px;
+  }
+  #previouspost{
+    left:60px;
+  }
+  #next {
+    right: -10px;
+  }
+  .fleche-main-diapo {
+    top: 100px;
+  }
+  .post-fleche-diapo {
+    top: 350px;
+  }
+
+  /*Images du diaporama*/
+  #slides, .img-diapo, .diapo-acceuil {
+    width: 400px;
+    height: 250px;
+  }
+  #slides ul {
+    padding-left: 0px;
+  }
+
+  /*Petites images sous le diaporama*/
+  #post-diapo li {
+    width: 70px;
+    height: 50px;
+  }
+  #post-diapo {
+    margin: 10px 15px;
+    width: 400px;
+  }
+  /*Elements de pagination*/
+
+  .slidesjs-pagination {
+    margin: 0px 155px 0px;
+  }
+
+
+  .blog-nav {
+    margin-left: 0px;
+  }
+
+  /*Elements concernant le diaporama dans son ensemble */
+  .blog-diapo {
+    width: 500px;
+    height: 400px;
+  }
+  .blog-diapo-title {
+    font-size: 16px;
+    padding: 24px 0px 5px;
+  }
+
+    /*Element concernant le blog dans son ensemble*/
+  .blog-header {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .blog-title {
+    font-size: 40px;
+  }
+
+  /* Elements concernant un post du blog */
+  .blog-post {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .blog-post-title{
+    font-size: 28px;
+  }
+
+  /* Elements concernant une video dans un post */
+  .post-video iframe {
+    width: 380px;
+    height: 290px;
+  }
+  .post-video, .blog-post-diapo, .blog-sidebar {
+    padding-left: 40px;
+  }
+
+  /* Elements de navigation */
+  .blog-nav {
+    margin-left: 0px;
+    max-width: 580px;
+  }
+  .blog-nav-item {
+    padding: 13px 10px 5px;
+  }
+  #barre-recherche {
+    width: 183px;
+  }
+  .barre-rech {
+    width: 190px;
+    height: 40px;
+    margin-left: 0px;
+  }
+
+  /* style de la carte interactive*/
+  .map,.map .overlay{
+    background:url(../img/mappetite.png) left top no-repeat;
+    width:200px;
+    height:210px;
+  }
+  .mini-carte{
+    display:block;
+  }
+  .carte-basique{
+    display:none;
+  }
+  .map img{
+    width:200px;
+    height:210px;
+  }
+
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  /*Redifinition de la taille des conteneurs */
+  .container {
+    width: 600px;
+  }
+  /*Fleche du diaporama*/
+  #nextpost {
+    right: 240px;
+  }
+  #previouspost {
+    left: 15px;
+  }
+  #next {
+    right: -33px;
+  }
+  .fleche-main-diapo {
+    top: 100px;
+  }
+  .post-fleche-diapo {
+    top: 270px;
+  }
+
+  /* Elements concernant le diaporama */
+  #slides, .img-diapo, .diapo-acceuil {
+    width: 300px;
+    height: 200px;
+  }
+  #slides ul {
+    padding-left: 10px;
+  }
+  #post-diapo li {
+    width: 90px;
+    height: 60px;
+  }
+  #post-diapo {
+    margin: 10px 10px;
+    width: 300px;
+  }
+
+  /* Elements de navigation */
+  .slidesjs-pagination {
+    margin: 0px 120px 0px;
+  }
+
+  /* Elements concernant le diaporama */
+  .blog-diapo {
+    width: 400px;
+    height: 400px;
+  }
+  .blog-diapo-title {
+    font-size: 16px;
+    padding: 24px 10px 5px;
+  }
+
+    /* Elements concernant le blog dans son ensemble */
+  .blog-header {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .blog-title {
+    font-size: 30px;
+  }
+  /* Elements de navigation */
+  .blog-nav {
+    margin-left: 0px;
+    max-width: 600px;
+  }
+  .blog-nav-item {
+    padding: 13px 10px 5px;
+  }
+  .barre-recherche-loupe {
+    display: none;
+  }
+
+/* Elements concernant un post du blog */
+  .blog-post {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .blog-post-title{
+    font-size: 24px;
+  }
+  /* Elements concernant une video dans un post */
+  .post-video iframe {
+    width: 280px;
+    height: 250px;
+  }
+  #barre-recherche {
+    width: 253px;
+  }
+  .barre-rech {
+    width: 260px;
+    height: 40px;
+    margin-left: 0px;
+  }
+
+  /*Element concernant la carte interactive*/
+  .mini-carte{
+    display:none;
+  }
+  .carte-basique{
+    display:block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+  #nextpost {
+    right: 50px;
+  }
+  #previouspost {
+    left: 105px;
+  }
+  #previous {
+    left: 90px;
+  }
+  #next {
+    right: -125px;
+  }
+  #slides, .img-diapo, .diapo-acceuil {
+    width: 300px;
+    height: 200px;
+  }
+  #post-diapo li {
+    width: 90px;
+    height: 60px;
+  }
+  #post-diapo {
+    margin: 10px 100px;
+    width: 300px;
+  }
+  .fleche-main-diapo {
+    top: 80px;
+  }
+  .post-fleche-diapo {
+    top: 270px;
+  }
+  #slides ul {
+    padding-left: 100px;
+  }
+  .slidesjs-pagination {
+    margin: 0px 210px 0px;
+  }
+  .blog-nav {
+    margin-left: 0px;
+  }
+  .blog-diapo {
+    width: 350px;
+    height: 400px;
+  }
+  .blog-diapo-title {
+    font-size: 16px;
+    padding: 24px 0px 5px;
+  }
+  .blog-header {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .blog-title {
+    font-size: 30px;
+  }
+  .blog-post {
+    margin-left: 75px;
+  }
+  .blog-post-title{
+    font-size: 22px;
+  }
+  .post-video iframe {
+    margin-left: 10px;
+    width: 320px;
+    height: 250px;
+  }
+  .blog-sidebar {
+    display: block;
+    margin-left: 70px;
+	width:370px;
+  }
+  .blog-masthead {
+    height: 330px;
+  }
+  .nav-bar {
+    height: 100px;
+  }
+  .blog-nav {
+    margin-left: 80px;
+    max-width: 600px;
+  }
+  .blog-nav-item {
+    padding: 13px 29px 5px;
+  }
+  .barre-recherche-loupe {
+    display: none;
+  }
+  /* Bar de recherche du slide bar*/
+  #barre-recherche {
+    width: 293px;
+  }
+  .barre-rech {
+    width: 300px;
+    height: 40px;
+    margin-left: 15px;
+  }
+
+  .mini-carte{
+    display:none;
+  }
+  .carte-basique{
+    display:block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+  #nextpost {
+    right: 70px;
+  }
+  #previouspost {
+    left: 15px;
+  }
+  #next {
+    right: -35px;
+  }
+  #slides, .img-diapo, .diapo-acceuil {
+    width: 300px;
+    height: 200px;
+  }
+  #post-diapo li {
+    width: 90px;
+    height: 60px;
+  }
+  #post-diapo {
+    margin: 10px 10px;
+    width: 300px;
+  }
+  .fleche-main-diapo {
+    top: 100px;
+  }
+  .post-fleche-diapo {
+    top: 265px;
+  }
+  #slides ul {
+    padding-left: 10px;
+  }
+  .slidesjs-pagination {
+    margin: 0px 120px 0px;
+  }
+  .blog-main {
+    padding-left: 0px;
+  }
+  .blog-nav {
+    margin-left: 0px;
+  }
+  .blog-diapo {
+    width: 350px;
+    height: 400px;
+  }
+  .blog-diapo-title {
+    font-size: 16px;
+    padding: 24px 0px 5px;
+  }
+  .blog-header {
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .blog-title {
+    font-size: 25px;
+  }
+  .blog-post {
+    margin-left: 0px;
+  }
+  .blog-post-title{
+    font-size: 20px;
+  }
+  .post-video iframe {
+    width: 320px;
+    height: 250px;
+  }
+  .blog-sidebar {
+    display: block;
+    margin-left: 0px;
+  }
+  .blog-masthead {
+    height: 550px;
+    background-size: 1900px auto;
+  }
+  .nav-bar {
+    height: 300px;
+  }
+  .blog-nav {
+    margin: 0px;
+    padding: 0px;
+    max-width: 419px;
+    width:500px;
+  }
+  .blog-nav-item {
+    padding: 13px 150px 5px;
+  }
+
+  .blog-nav li{
+    display:block;
+  }
+
+  .barre-recherche-loupe {
+    display: none;
+  }
+
+
+  .form-group textarea {
+    width:400px;
+    height:260px;
+  }
+
+  /* Bar de recherche du slide bar*/
+  #barre-recherche {
+    width: 273px;
+  }
+  .barre-rech {
+    width: 280px;
+    height: 40px;
+    margin-left: 0px;
+  }
+
+  .mini-carte{
+    display:none;
+  }
+  .carte-basique{
+    display:block;
+  }
+}
